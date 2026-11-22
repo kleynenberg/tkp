@@ -1,0 +1,20 @@
+# The Kleynenberg Perspective (TKP) — Podcast Summary
+> Canonical URL: https://tkp.kleynenberg.com/
+> Mirror URL: https://steven.kleynenberg.com/tkp/
+> RSS Feed: https://tkp.kleynenberg.com/feed.xml
+> Source Playlist: https://www.youtube.com/playlist?list=PLAN7_k5CM5ZY
+> Host: Steven Kleynenberg (Delft, The Netherlands)
+> Tagline: Pure signal. Zero static.
+
+## Overview
+The Kleynenberg Perspective (TKP) is an independent, ad-free, self-hosted audio broadcast exploring Artificial Intelligence architectures, computational linguistics, cognitive systems, and digital sovereignty. Syndicated via podsync v2.8.0 to a static RSS 2.0 feed without tracking or dynamic ad injection.
+
+## Published Episodes (June – July 2026)
+- Episode 05 (15:47): From Neural Compilers to Sovereign Browser AI
+- Episode 04 (18:12): Deterministic Linguistics Meets Dense Vector Retrieval
+- Episode 03 (14:29): Against Subscription Lock-In: Building Sovereign Personal Infrastructure
+- Episode 02 (16:05): Human-Machine Partnership: Integrity Headers & Verifiable AI
+- Episode 01 (12:40): Pure Signal, Zero Static: Inaugural Broadcast
+
+## Full Archive
+- Full TKP Dossier: https://tkp.kleynenberg.com/llms-full.txt

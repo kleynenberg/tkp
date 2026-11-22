@@ -1,0 +1,38 @@
+# The Kleynenberg Perspective (TKP) — Complete Broadcast Corpus
+Canonical URL: https://tkp.kleynenberg.com/llms-full.txt
+Mirror URL: https://steven.kleynenberg.com/tkp/llms-full.txt
+Podcast Title: The Kleynenberg Perspective (TKP)
+Tagline: Pure signal. Zero static.
+Host & Producer: Steven Kleynenberg
+Canonical Web URL: https://tkp.kleynenberg.com/
+RSS 2.0 Feed URL: https://tkp.kleynenberg.com/feed.xml
+Source Playlist URL: https://www.youtube.com/playlist?list=PLAN7_k5CM5ZY
+
+================================================================================
+1. BROADCAST ARCHITECTURE
+================================================================================
+- Self-hosted static audio syndication powered by podsync v2.8.0.
+- Generates static RSS 2.0 XML feed (feed.xml) with zero tracking pixels, zero dynamic ad insertion, and direct audio enclosures.
+
+================================================================================
+2. EPISODE ARCHIVE (JUNE – JULY 2026)
+================================================================================
+[EPISODE 05] From Neural Compilers to Sovereign Browser AI
+- Date: July 2026 | Duration: 15:47
+- Topics: 1990s massively parallel neurocomputers (MetaNet, BSP400) compared to modern client-side WebGPU inference and local-first AI tooling.
+
+[EPISODE 04] Deterministic Linguistics Meets Dense Vector Retrieval
+- Date: July 2026 | Duration: 18:12
+- Topics: Hybrid RAG architectures combining Part-of-Speech sequence filtering (PCT Patent WO 2014/003543 A1) with dense vector search.
+
+[EPISODE 03] Against Subscription Lock-In: Building Sovereign Personal Infrastructure
+- Date: June 2026 | Duration: 14:29
+- Topics: First-principles Linux engineering, replacing opaque SaaS wrappers with auditable local software and static feeds.
+
+[EPISODE 02] Human-Machine Partnership: Integrity Headers & Verifiable AI
+- Date: June 2026 | Duration: 16:05
+- Topics: Explicit provenance headers, zero silent fallbacks, and human verification gates in AI-assisted engineering.
+
+[EPISODE 01] Pure Signal, Zero Static: Inaugural Broadcast
+- Date: June 2026 | Duration: 12:40
+- Topics: Founding manifesto of The Kleynenberg Perspective on signal-to-noise ratio in technical broadcasting.

@@ -1,0 +1,322 @@
+<!-- ============================================================================ -->
+<!-- INTEGRITY HEADER - GEMINI AI                                                 -->
+<!-- File: tkp/index.html                                                         -->
+<!-- Application: The Kleynenberg Perspective (TKP) — Sovereign Audio Broadcast   -->
+<!-- ============================================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Kleynenberg Perspective (TKP) — Pure signal. Zero static.</title>
+    <meta name="description" content="The Kleynenberg Perspective (TKP): ad-free, self-hosted audio broadcast by Steven Kleynenberg exploring Artificial Intelligence, computational linguistics, cognitive systems, and digital sovereignty.">
+    <link rel="canonical" href="https://tkp.kleynenberg.com/">
+    <link rel="alternate" type="application/rss+xml" title="The Kleynenberg Perspective RSS Feed" href="https://tkp.kleynenberg.com/feed.xml">
+    <link rel="alternate" type="text/plain" title="TKP LLM Summary" href="https://tkp.kleynenberg.com/llms.txt">
+    <link rel="alternate" type="text/plain" title="TKP LLM Full Archive" href="https://tkp.kleynenberg.com/llms-full.txt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PodcastSeries",
+      "@id": "https://tkp.kleynenberg.com/#podcast",
+      "name": "The Kleynenberg Perspective",
+      "alternateName": "TKP",
+      "slogan": "Pure signal. Zero static.",
+      "url": "https://tkp.kleynenberg.com/",
+      "webFeed": "https://tkp.kleynenberg.com/feed.xml",
+      "author": {
+        "@type": "Person",
+        "name": "Steven Kleynenberg",
+        "url": "https://steven.kleynenberg.com/"
+      },
+      "description": "Independent, self-hosted audio broadcast exploring AI architectures, computational linguistics, cognitive science, and digital sovereignty."
+    }
+    </script>
+    <style>
+        :root {
+            --bg-main: #ffffff;
+            --bg-surface: #fafafa;
+            --text-primary: #111111;
+            --text-secondary: #4a4a4a;
+            --text-muted: #767676;
+            --border-color: #e0e0e0;
+            --border-strong: #111111;
+            --accent: #0056b3;
+        }
+        html.reverse-mode {
+            --bg-main: #000000;
+            --bg-surface: #0a0a0a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #c0c0c0;
+            --text-muted: #888888;
+            --border-color: #262626;
+            --border-strong: #f5f5f5;
+            --accent: #66b2ff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            padding: 3rem 1.5rem 5rem;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .top-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+        }
+        .nav-group { display: flex; flex-wrap: wrap; gap: 0.85rem; align-items: center; }
+        .top-bar a { color: var(--text-primary); text-decoration: none; border-bottom: 1px solid transparent; }
+        .top-bar a:hover, .top-bar a.active { border-bottom-color: var(--border-strong); font-weight: 700; }
+        .mode-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.72rem;
+            padding: 0.25rem 0.6rem;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .mode-btn:hover { border-color: var(--border-strong); color: var(--text-primary); }
+        header.hero { margin-bottom: 3rem; }
+        .eyebrow {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .hero-header-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .brand-logo {
+            max-height: 64px;
+            width: auto;
+            display: block;
+            border: 1px solid var(--border-color);
+            padding: 4px;
+            background: #ffffff;
+        }
+        h1 { font-size: clamp(1.85rem, 3.8vw, 2.6rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+        .lead { font-size: 1.08rem; color: var(--text-secondary); max-width: 780px; }
+        .meta-strip {
+            display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.25rem;
+            font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.78rem; color: var(--text-muted);
+        }
+        h2.section-title {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-primary);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-strong);
+            margin: 2.75rem 0 1.25rem;
+        }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+        article.card {
+            border: 1px solid var(--border-color);
+            background: var(--bg-surface);
+            padding: 1.4rem 1.5rem;
+        }
+        .card-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.45rem; }
+        .card-tag { font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+        article.card h3 { font-size: 1.22rem; font-weight: 700; margin-bottom: 0.45rem; }
+        article.card p { color: var(--text-secondary); font-size: 0.98rem; margin-bottom: 0.75rem; }
+        article.card ul { margin: 0.4rem 0 0.85rem 1.25rem; color: var(--text-secondary); font-size: 0.95rem; }
+        article.card li { margin-bottom: 0.3rem; }
+        .url-list {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            margin-top: 0.65rem;
+            padding-top: 0.65rem;
+            border-top: 1px dashed var(--border-color);
+        }
+        .url-list a { color: var(--accent); text-decoration: none; word-break: break-all; }
+        .url-list a:hover { text-decoration: underline; }
+        table.manifest-table {
+            width: 100%; border-collapse: collapse; font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.8rem; margin-top: 0.75rem;
+        }
+        table.manifest-table th, table.manifest-table td {
+            text-align: left; padding: 0.65rem 0.5rem; border-bottom: 1px solid var(--border-color); vertical-align: top;
+        }
+        table.manifest-table th { color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.72rem; }
+        table.manifest-table a { color: var(--accent); text-decoration: none; word-break: break-all; }
+        table.manifest-table a:hover { text-decoration: underline; }
+        footer.colophon {
+            margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);
+            font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.76rem; color: var(--text-muted);
+            display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;
+        }
+        footer.colophon a { color: var(--text-primary); text-decoration: none; }
+        footer.colophon a:hover { text-decoration: underline; }
+
+    </style>
+</head>
+<body>
+    <nav class="top-bar" aria-label="Primary portal navigation">
+        <div class="nav-group">
+            <a href="../index.html">steven.kleynenberg.com</a> <a href="../papers/index.html">/papers/</a> <a href="../kso/index.html">/kso/</a> <a href="../pp/index.html">/pp/</a> <a href="../kp/index.html">/kp/</a> <a href="../tkp/index.html" class="active">/tkp/</a>
+        </div>
+        <div class="nav-group">
+            <a href="./llms.txt">llms.txt</a>
+            <a href="./llms-full.txt">llms-full.txt</a>
+            <button type="button" class="mode-btn" id="theme-toggle" title="Double-tap page or click to toggle Reverse Dark Mode">Invert</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="eyebrow">INDEPENDENT AUDIO BROADCAST // PURE SIGNAL. ZERO STATIC.</div>
+        <div class="hero-header-row">
+            <div>
+                <h1>The Kleynenberg Perspective</h1>
+                <p class="lead">Ad-free, self-hosted podcast and audio essay series hosted by <strong>Steven Kleynenberg</strong>. Deep dives into Artificial Intelligence architectures, computational linguistics, cognitive systems, and sovereign engineering&mdash;distributed via static RSS without tracking or intermediary gatekeepers.</p>
+            </div>
+            <img src="./tkp_logo.svg" alt="The Kleynenberg Perspective (TKP) Logo" class="brand-logo">
+        </div>
+        <div class="meta-strip">
+            <span>TAGLINE: PURE SIGNAL. ZERO STATIC.</span>
+            <span>PIPELINE: PODSYNC V2.8.0 &rarr; STATIC RSS 2.0</span>
+            <span>CANONICAL: https://tkp.kleynenberg.com/</span>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">01 // Sovereign Broadcast Pipeline</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Zero-Gatekeeper Distribution</span>
+                    <span class="card-tag">RSS 2.0 / Self-Hosted</span>
+                </div>
+                <h3>Direct RSS Syndication Architecture</h3>
+                <p>Episodes are mastered from source playlist recordings and automatically syndicated via a self-hosted <code>podsync</code> v2.8.0 pipeline into a clean, static RSS 2.0 XML feed (<code>feed.xml</code>) with zero dynamic ad-insertion, zero listener telemetry, and direct enclosure URLs.</p>
+                <div class="url-list">
+                    <a href="https://tkp.kleynenberg.com/">https://tkp.kleynenberg.com/</a>
+                    <a href="https://tkp.kleynenberg.com/feed.xml">https://tkp.kleynenberg.com/feed.xml</a>
+                    <a href="https://www.youtube.com/playlist?list=PLAN7_k5CM5ZY">https://www.youtube.com/playlist?list=PLAN7_k5CM5ZY</a>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title">02 // Published Episode Archive (June &ndash; July 2026)</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Episode 05 // July 2026</span>
+                    <span class="card-tag">Duration: 15:47</span>
+                </div>
+                <h3>From Neural Compilers to Sovereign Browser AI</h3>
+                <p>Tracing the architectural arc from 1990s massively parallel neurocomputers (MetaNet and BSP400) to modern client-side WebGPU inference and local-first AI tooling.</p>
+                <div class="url-list">
+                    <a href="https://tkp.kleynenberg.com/feed.xml">https://tkp.kleynenberg.com/feed.xml</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Episode 04 // July 2026</span>
+                    <span class="card-tag">Duration: 18:12</span>
+                </div>
+                <h3>Deterministic Linguistics Meets Dense Vector Retrieval</h3>
+                <p>Why pure statistical embeddings hallucinate on technical corpora, and how Part-of-Speech sequence filtering (WO 2014/003543 A1) restores precision and auditability in Hybrid RAG.</p>
+                <div class="url-list">
+                    <a href="https://tkp.kleynenberg.com/feed.xml">https://tkp.kleynenberg.com/feed.xml</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Episode 03 // June 2026</span>
+                    <span class="card-tag">Duration: 14:29</span>
+                </div>
+                <h3>Against Subscription Lock-In: Building Sovereign Personal Infrastructure</h3>
+                <p>First-principles software engineering on Linux: replacing opaque SaaS wrappers with auditable local tools, static feeds, and minimal-attack-surface architectures.</p>
+                <div class="url-list">
+                    <a href="https://tkp.kleynenberg.com/feed.xml">https://tkp.kleynenberg.com/feed.xml</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Episode 02 // June 2026</span>
+                    <span class="card-tag">Duration: 16:05</span>
+                </div>
+                <h3>Human-Machine Partnership: Integrity Headers &amp; Verifiable AI</h3>
+                <p>Establishing operational guardrails for human-AI engineering collaboration: explicit provenance, zero silent fallbacks, and deterministic verification gates.</p>
+                <div class="url-list">
+                    <a href="https://tkp.kleynenberg.com/feed.xml">https://tkp.kleynenberg.com/feed.xml</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Episode 01 // June 2026</span>
+                    <span class="card-tag">Duration: 12:40</span>
+                </div>
+                <h3>Pure Signal, Zero Static: Inaugural Broadcast</h3>
+                <p>Introduction to The Kleynenberg Perspective: why independent technical broadcasting matters in an era of algorithmic noise and synthetic content farms.</p>
+                <div class="url-list">
+                    <a href="https://tkp.kleynenberg.com/feed.xml">https://tkp.kleynenberg.com/feed.xml</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <footer class="colophon">
+        <div>&copy; mmxxvi kleynenberg publishers &mdash; <a href="https://kleynenberg.com">https://kleynenberg.com</a></div>
+        <div>
+            <a href="https://steven.kleynenberg.com/">https://steven.kleynenberg.com/</a> &middot;
+            <a href="./llms.txt">./llms.txt</a> &middot;
+            <a href="./llms-full.txt">./llms-full.txt</a>
+        </div>
+    </footer>
+    <script>
+        (function() {
+            const root = document.documentElement;
+            const btn = document.getElementById('theme-toggle');
+            if (localStorage.getItem('sk_reverse_mode') === '1') {
+                root.classList.add('reverse-mode');
+            }
+            function toggleMode() {
+                root.classList.toggle('reverse-mode');
+                localStorage.setItem('sk_reverse_mode', root.classList.contains('reverse-mode') ? '1' : '0');
+            }
+            if (btn) btn.addEventListener('click', toggleMode);
+            let lastTap = 0;
+            document.addEventListener('dblclick', function(e) {
+                if (!e.target.closest('a, button, summary')) toggleMode();
+            });
+            document.addEventListener('touchend', function(e) {
+                const now = Date.now();
+                if (now - lastTap < 300 && !e.target.closest('a, button, summary')) toggleMode();
+                lastTap = now;
+            }, { passive: true });
+        })();
+    </script>
+</body>
+</html>
