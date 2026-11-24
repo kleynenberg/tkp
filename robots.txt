@@ -1,0 +1,10 @@
+# ==============================================================================
+# INTEGRITY HEADER
+# File:        tkp/robots.txt
+# Host:        https://tkp.kleynenberg.com/
+# Protocol:    RFC 9309 (https://www.rfc-editor.org/rfc/rfc9309.html)
+# ==============================================================================
+User-agent: *
+Allow: /
+
+Sitemap: https://tkp.kleynenberg.com/sitemap.xml
