@@ -4,7 +4,8 @@ INTEGRITY HEADER — Kleynenberg Publishers / tkp.kleynenberg.com
 Site URL    : https://tkp.kleynenberg.com
 Document    : privacy.html
 Compliance  : EU GDPR (Regulation (EU) 2016/679), ePrivacy Directive 2002/58/EC,
-              Dutch UAVG & Telecommunicatiewet art. 11.7a (€0 static HTML)
+              EU AI Act (Regulation (EU) 2024/1689 Art. 50), EU DSA (2022/2065),
+              EU DSM Directive (2019/790 Art. 4), Dutch UAVG & Tw art. 11.7a
 ============================================================================
 -->
 <!DOCTYPE html>
@@ -12,10 +13,61 @@ Compliance  : EU GDPR (Regulation (EU) 2016/679), ePrivacy Directive 2002/58/EC,
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Privacy Policy (GDPR) & Privacybeleid (AVG) — tkp.kleynenberg.com</title>
+  <title>Privacy Policy (EU GDPR) — tkp.kleynenberg.com</title>
+  <link rel="canonical" href="https://tkp.kleynenberg.com/privacy.html" />
+  <link rel="privacy-policy" href="https://tkp.kleynenberg.com/privacy.html" />
+  <link rel="terms-of-service" href="https://tkp.kleynenberg.com/terms.html" />
+  <link rel="describedby" href="https://tkp.kleynenberg.com/llms.txt" type="text/plain" title="LLM & AI Agent Knowledge Index" />
+  <meta name="tdm-reservation" content="0" />
+  <meta name="tdm-policy" content="https://tkp.kleynenberg.com/terms.html" />
+  <meta name="robots" content="index, follow" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Noto+Sans+SC:wght@400;700&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PrivacyPolicy",
+  "@id": "https://tkp.kleynenberg.com/privacy.html#webpage",
+  "url": "https://tkp.kleynenberg.com/privacy.html",
+  "name": "Privacy Policy (EU GDPR) — tkp.kleynenberg.com",
+  "datePublished": "2026-11-25",
+  "dateModified": "2026-11-25",
+  "inLanguage": [
+    "en",
+    "nl",
+    "de",
+    "fr",
+    "es",
+    "zh-Hans"
+  ],
+  "isPartOf": {
+    "@type": "WebSite",
+    "@id": "https://tkp.kleynenberg.com/#website",
+    "url": "https://tkp.kleynenberg.com/",
+    "name": "tkp.kleynenberg.com"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kleynenberg Publishers",
+    "url": "https://steven.kleynenberg.com/",
+    "email": "steven@kleynenberg.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Delft",
+      "addressCountry": "NL"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Steven Ernst Kleynenberg",
+      "email": "steven@kleynenberg.com"
+    }
+  },
+  "privacyPolicy": "https://tkp.kleynenberg.com/privacy.html",
+  "termsOfService": "https://tkp.kleynenberg.com/terms.html",
+  "usageInfo": "https://tkp.kleynenberg.com/terms.html"
+}
+  </script>
   <style>
     :root {
       --bg: #f8fafc;
@@ -35,7 +87,7 @@ Compliance  : EU GDPR (Regulation (EU) 2016/679), ePrivacy Directive 2002/58/EC,
       padding: 0;
       background: var(--bg);
       color: var(--ink);
-      font-family: "Atkinson Hyperlegible", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: "Atkinson Hyperlegible", "Noto Sans SC", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       font-size: 16px;
       line-height: 1.65;
     }
@@ -45,7 +97,7 @@ Compliance  : EU GDPR (Regulation (EU) 2016/679), ePrivacy Directive 2002/58/EC,
       padding: 16px 24px;
     }
     .header-inner {
-      max-width: 920px;
+      max-width: 960px;
       margin: 0 auto;
       display: flex;
       flex-wrap: wrap;
@@ -62,64 +114,72 @@ Compliance  : EU GDPR (Regulation (EU) 2016/679), ePrivacy Directive 2002/58/EC,
     nav {
       display: flex;
       flex-wrap: wrap;
-      gap: 14px;
+      gap: 10px;
       font-size: 14px;
     }
     nav a {
       color: var(--accent);
       text-decoration: none;
       font-weight: 700;
-      padding: 4px 8px;
+      padding: 5px 10px;
       border-radius: 6px;
     }
     nav a:hover, nav a[aria-current="page"] {
       background: var(--accent-soft);
     }
     main {
-      max-width: 920px;
+      max-width: 960px;
       margin: 28px auto;
       padding: 0 20px;
     }
-    .card {
+    .lang-bar {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px;
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 28px 32px;
-      margin-bottom: 24px;
-      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
-    }
-    .lang-bar {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      background: var(--surface-alt);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 6px 10px;
-      margin-bottom: 18px;
+      padding: 10px 14px;
+      margin-bottom: 22px;
       font-size: 14px;
+      box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
     }
     .lang-bar a {
       color: var(--accent);
       font-weight: 700;
       text-decoration: none;
+      padding: 3px 8px;
+      border-radius: 5px;
+      background: var(--surface-alt);
     }
     .lang-bar a:hover {
-      text-decoration: underline;
+      background: var(--accent-soft);
+    }
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 26px 30px;
+      margin-bottom: 22px;
+      box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
     }
     h1 {
       margin: 0 0 8px 0;
-      font-size: 26px;
+      font-size: 25px;
       line-height: 1.25;
     }
     .subtitle {
       color: var(--muted);
       font-size: 14px;
-      margin: 0 0 20px 0;
+      margin: 0 0 18px 0;
     }
     h2 {
-      margin: 24px 0 8px 0;
-      font-size: 19px;
+      margin: 22px 0 8px 0;
+      font-size: 18.5px;
       color: var(--accent);
       border-bottom: 1px solid var(--surface-alt);
       padding-bottom: 4px;
@@ -146,8 +206,20 @@ Compliance  : EU GDPR (Regulation (EU) 2016/679), ePrivacy Directive 2002/58/EC,
       margin: 14px 0;
       font-size: 14.5px;
     }
+    .braille-box {
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 16px 20px;
+      font-size: 20px;
+      line-height: 1.9;
+      letter-spacing: 0.08em;
+      white-space: pre-wrap;
+      word-break: break-word;
+      color: var(--ink);
+    }
     footer {
-      max-width: 920px;
+      max-width: 960px;
       margin: 0 auto 36px auto;
       padding: 16px 20px;
       border-top: 1px solid var(--border);
@@ -174,89 +246,140 @@ Compliance  : EU GDPR (Regulation (EU) 2016/679), ePrivacy Directive 2002/58/EC,
       <a class="brand" href="https://tkp.kleynenberg.com/">tkp.kleynenberg.com · Kleynenberg Publishers</a>
       <nav aria-label="Legal navigation">
         <a href="https://tkp.kleynenberg.com/">Home</a>
-        <a href="./privacy.html" aria-current="page">Privacy Policy / Privacybeleid</a>
-        <a href="./cookies.html">Cookie Policy / Cookiebeleid</a>
-        <a href="./voorwaarden.html">Terms / Algemene voorwaarden</a>
+        <a href="./privacy.html" aria-current="page">Privacy (GDPR)</a>
+        <a href="./cookies.html">Cookies (ePrivacy)</a>
+        <a href="./terms.html">Terms &amp; AI Transparency</a>
       </nav>
     </div>
   </header>
 
   <main>
+    <nav class="lang-bar" aria-label="Language & script selector">
+      <strong>Language / Schrift:</strong>
+      <a href="#en">English</a>
+      <a href="#nl">Nederlands</a>
+      <a href="#de">Deutsch</a>
+      <a href="#fr">Français</a>
+      <a href="#es">Español</a>
+      <a href="#zh">简体中文</a>
+      <a href="#braille">Unicode Braille (⠠⠃⠗⠁⠊⠇⠇⠑)</a>
+    </nav>
+
     <article class="card" id="en" lang="en">
-      <div class="lang-bar">
-        <span>Language / Taal:</span>
-        <a href="#en">English (EU GDPR)</a>
-        <span>·</span>
-        <a href="#nl">Nederlands (Wettelijke AVG-verklaring)</a>
-      </div>
+      <h1>Privacy Policy (EU GDPR)</h1>
+      <p class="subtitle">Effective date: 25 November 2026 · Domain: <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a> (podcast productions, essays, and client-side AI exploration tools)</p>
 
-      <h1>Privacy Policy (GDPR) &amp; Privacybeleid (AVG)</h1>
-      <p class="subtitle">Effective date / Ingangsdatum: 24 November 2026 · Applicable to <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a></p>
-
-      <h2>1. Data Controller</h2>
+      <h2>1. Data Controller (Art. 13(1)(a) GDPR)</h2>
       <div class="meta-box">
         <strong>Steven Ernst Kleynenberg / Kleynenberg Publishers</strong><br />
-        Waterloop #1, 2514 XC Delft, The Netherlands<br />
+        Location: Delft, The Netherlands<br />
+        Contact: <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a><br />
         Domain: <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a>
       </div>
       <p>
-        This website is a static, zero-tracking publication index and open-source software portal. We do not sell personal data, operate advertising trackers, run behavioral profiling, or maintain visitor accounts.
+        This website is a static, zero-tracking publication and software portal. We do not sell personal data, deploy behavioral advertising trackers, build user profiles, or operate visitor accounts.
       </p>
 
       <h2>2. Personal Data Processed &amp; Legal Basis (Art. 6 GDPR)</h2>
       <ul>
         <li>
-          <strong>Static Web Hosting Logs (GitHub Pages):</strong> This site is hosted on GitHub Pages (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>), operated by GitHub, Inc. When you request a page, GitHub transiently processes technical connection metadata (such as your IP address, user-agent string, and timestamp) to deliver static assets securely and prevent abuse. Legal basis: legitimate interest in secure network operation (Article 6(1)(f) GDPR).
+          <strong>Static Web Hosting (GitHub Pages):</strong> Hosted on GitHub Pages (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>). When you request a page, GitHub transiently processes technical connection metadata (IP address, user-agent, timestamp) to serve static files securely. Legal basis: legitimate interest in secure network operation (Article 6(1)(f) GDPR).
         </li>
         <li>
-          <strong>Web Typography (Google Fonts):</strong> To ensure visual legibility and accessibility, pages load the <em>Atkinson Hyperlegible</em> typeface from Google Fonts (<a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>). Your browser connects directly to Google servers, transmitting your IP address for font delivery. Legal basis: legitimate interest in accessible presentation (Article 6(1)(f) GDPR).
+          <strong>Web Typography (Google Fonts):</strong> Pages load <em>Atkinson Hyperlegible</em> (<a href="https://fonts.google.com/specimen/Atkinson+Hyperlegible">https://fonts.google.com/specimen/Atkinson+Hyperlegible</a>) and <em>Noto Sans SC</em> (<a href="https://fonts.google.com/specimen/Noto+Sans+SC">https://fonts.google.com/specimen/Noto+Sans+SC</a>) via Google Fonts (<a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>) for visual accessibility. Legal basis: legitimate interest in accessible legibility (Article 6(1)(f) GDPR).
         </li>
         <li>
-          <strong>Local-First Client Execution:</strong> Interactive browser applications, visualizations, and search interfaces hosted under <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a> execute locally inside your browser without transmitting search queries to Kleynenberg Publishers.
+          <strong>Local-First &amp; AI-Assisted Browser Processing (Art. 22 GDPR &amp; EU AI Act):</strong> Interactive search, visualization, and AI-assisted client tools run locally inside your browser without transmitting queries to Kleynenberg Publishers, and perform no automated legal decision-making under Article 22 GDPR.
         </li>
       </ul>
 
-      <h2>3. Data Retention &amp; International Transfers</h2>
+      <h2>3. EU Regulatory Framework &amp; Your Rights (Articles 15–21 GDPR)</h2>
       <p>
-        Kleynenberg Publishers maintains no server-side visitor database and retains zero personal logs of its own. Infrastructure providers (GitHub, Inc. and Google LLC) process technical delivery logs under the EU-U.S. Data Privacy Framework (<a href="https://www.dataprivacyframework.gov/">https://www.dataprivacyframework.gov/</a>) and standard contractual safeguards.
-      </p>
-
-      <h2>4. Your Rights Under the GDPR (Articles 15–21)</h2>
-      <p>
-        Under Regulation (EU) 2016/679 (<a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>), you have the right to request access, rectification, erasure, restriction of processing, or object to processing of your personal data, as well as the right to lodge a complaint with the Dutch Data Protection Authority, the <strong>Autoriteit Persoonsgegevens</strong> (<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>).
+        Governed by Regulation (EU) 2016/679 (GDPR: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>), the EU Digital Services Act (Regulation (EU) 2022/2065: <a href="https://eur-lex.europa.eu/eli/reg/2022/2065/oj">https://eur-lex.europa.eu/eli/reg/2022/2065/oj</a>), and the EU AI Act (Regulation (EU) 2024/1689: <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj">https://eur-lex.europa.eu/eli/reg/2024/1689/oj</a>). You may request access, rectification, erasure, or restriction via <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a>, or lodge a complaint with the Dutch <strong>Autoriteit Persoonsgegevens</strong> (<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>) or any EU supervisory authority coordinated via the <strong>European Data Protection Board (EDPB)</strong> (<a href="https://www.edpb.europa.eu/">https://www.edpb.europa.eu/</a>).
       </p>
     </article>
 
     <article class="card" id="nl" lang="nl">
-      <h2>Nederlandse AVG-verklaring (Privacybeleid)</h2>
+      <h2>Nederlands — Privacybeleid (AVG / UAVG)</h2>
       <p>
-        <strong>Verwerkingsverantwoordelijke:</strong> Steven Ernst Kleynenberg / Kleynenberg Publishers, gevestigd aan Waterloop #1, 2514 XC Delft, Nederland (<a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a>).
+        <strong>Verwerkingsverantwoordelijke:</strong> Steven Ernst Kleynenberg / Kleynenberg Publishers, gevestigd te Delft, Nederland · Contact: <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> · Domein: <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a> (podcastproducties, essays en client-side AI-verkenningstools).
       </p>
       <ul>
-        <li>
-          <strong>Geen tracking of verkoop van gegevens:</strong> Op <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a> worden geen persoonsgegevens verkocht, geen marketing- of analytische trackers geplaatst en geen gebruikersprofielen opgebouwd.
-        </li>
-        <li>
-          <strong>Technische verwerking bij paginabezoek:</strong> Voor het aanbieden van de statische webpagina's via GitHub Pages (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>) en het laden van het lettertype <em>Atkinson Hyperlegible</em> via Google Fonts (<a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>) wordt jouw IP-adres technisch verwerkt op grond van gerechtvaardigd belang (artikel 6 lid 1 sub f AVG: veilige werking en goede leesbaarheid).
-        </li>
-        <li>
-          <strong>Lokale verwerking in de browser:</strong> Interactieve zoek- en visualisatietools op deze website draaien volledig lokaal op jouw eigen apparaat; zoekopdrachten worden niet naar een server van Kleynenberg Publishers verzonden.
-        </li>
-        <li>
-          <strong>Rechten van betrokkenen &amp; toezichthouder:</strong> Op grond van de Algemene Verordening Gegevensbescherming (<a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>) en de Uitvoeringswet AVG (<a href="https://wetten.overheid.nl/BWBR0040940">https://wetten.overheid.nl/BWBR0040940</a>) heb je recht op inzage, rectificatie, verwijdering en bezwaar. Daarnaast kun je een klacht indienen bij de Autoriteit Persoonsgegevens (<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>).
-        </li>
+        <li><strong>Geen tracking of verkoop van gegevens:</strong> Wij verkopen geen persoonsgegevens, plaatsen geen marketing- of analytische trackers en bouwen geen bezoekersprofielen op.</li>
+        <li><strong>Technische levering (GitHub Pages &amp; Google Fonts):</strong> Voor statische hosting via GitHub Pages (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>) en toegankelijke typografie (<em>Atkinson Hyperlegible</em> &amp; <em>Noto Sans SC</em> via <a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>) wordt je IP-adres uitsluitend technisch verwerkt op grond van gerechtvaardigd belang (art. 6 lid 1 sub f AVG).</li>
+        <li><strong>Lokale verwerking &amp; EU-kader:</strong> Interactieve en AI-ondersteunde tools draaien lokaal in je browser zonder geautomatiseerde besluitvorming (art. 22 AVG). Rechten onder de AVG (<a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>) en UAVG (<a href="https://wetten.overheid.nl/BWBR0040940">https://wetten.overheid.nl/BWBR0040940</a>) kun je uitoefenen via <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a>; toezichthouder is de Autoriteit Persoonsgegevens (<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>) binnen de EDPB (<a href="https://www.edpb.europa.eu/">https://www.edpb.europa.eu/</a>).</li>
       </ul>
+    </article>
+
+    <article class="card" id="de" lang="de">
+      <h2>Deutsch — Datenschutzerklärung (EU-DSGVO)</h2>
+      <p>
+        <strong>Verantwortlicher:</strong> Steven Ernst Kleynenberg / Kleynenberg Publishers, Delft, Niederlande · Kontakt: <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> · Domain: <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a>.
+      </p>
+      <ul>
+        <li><strong>Kein Tracking, kein Datenverkauf:</strong> Diese Website verwendet keine Werbe- oder Analyse-Tracker, erstellt keine Nutzerprofile und verkauft keinerlei personenbezogene Daten.</li>
+        <li><strong>Technische Bereitstellung:</strong> Beim Aufruf über GitHub Pages (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>) und dem Laden der barrierearmen Schriftarten <em>Atkinson Hyperlegible</em> und <em>Noto Sans SC</em> über Google Fonts (<a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>) wird Ihre IP-Adresse auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (<a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>) technisch verarbeitet.</li>
+        <li><strong>Betroffenenrechte:</strong> Ihre Rechte auf Auskunft, Berichtigung, Löschung und Widerspruch (Art. 15–21 DSGVO) richten Sie an <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a>; zuständige Aufsichtsbehörde ist die Autoriteit Persoonsgegevens (<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>) im Europäischen Datenschutzausschuss (EDSA / EDPB: <a href="https://www.edpb.europa.eu/">https://www.edpb.europa.eu/</a>).</li>
+      </ul>
+    </article>
+
+    <article class="card" id="fr" lang="fr">
+      <h2>Français — Politique de confidentialité (RGPD UE)</h2>
+      <p>
+        <strong>Responsable du traitement :</strong> Steven Ernst Kleynenberg / Kleynenberg Publishers, Delft, Pays-Bas · Contact : <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> · Domaine : <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a>.
+      </p>
+      <ul>
+        <li><strong>Aucun pistage ni revente de données :</strong> Ce site statique ne vend aucune donnée personnelle, n'utilise aucun traceur publicitaire ou analytique et n'établit aucun profil d'utilisateur.</li>
+        <li><strong>Traitement technique :</strong> L'hébergement via GitHub Pages (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>) et le chargement des polices accessibles <em>Atkinson Hyperlegible</em> et <em>Noto Sans SC</em> via Google Fonts (<a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>) reposent sur l'intérêt légitime (article 6, paragraphe 1, point f du RGPD : <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>).</li>
+        <li><strong>Vos droits :</strong> Conformément aux articles 15 à 21 du RGPD, vous pouvez exercer vos droits via <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> ou saisir l'Autoriteit Persoonsgegevens (<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>) / le Comité européen de la protection des données (CEPD / EDPB : <a href="https://www.edpb.europa.eu/">https://www.edpb.europa.eu/</a>).</li>
+      </ul>
+    </article>
+
+    <article class="card" id="es" lang="es">
+      <h2>Español — Política de privacidad (RGPD UE)</h2>
+      <p>
+        <strong>Responsable del tratamiento:</strong> Steven Ernst Kleynenberg / Kleynenberg Publishers, Delft, Países Bajos · Contacto: <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> · Dominio: <a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a>.
+      </p>
+      <ul>
+        <li><strong>Sin rastreo ni venta de datos:</strong> Este sitio estático no vende datos personales, no utiliza rastreadores publicitarios ni analíticos y no crea perfiles de visitantes.</li>
+        <li><strong>Procesamiento técnico:</strong> El alojamiento en GitHub Pages (<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>) y la carga de las fuentes accesibles <em>Atkinson Hyperlegible</em> y <em>Noto Sans SC</em> a través de Google Fonts (<a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>) se basan en el interés legítimo (art. 6.1.f del RGPD: <a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>).</li>
+        <li><strong>Sus derechos:</strong> Puede ejercer sus derechos de acceso, rectificación, supresión y oposición (arts. 15–21 RGPD) escribiendo a <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> o ante la Autoriteit Persoonsgegevens (<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>) y el Comité Europeo de Protección de Datos (CEPD / EDPB: <a href="https://www.edpb.europa.eu/">https://www.edpb.europa.eu/</a>).</li>
+      </ul>
+    </article>
+
+    <article class="card" id="zh" lang="zh-Hans">
+      <h2>简体中文 — 隐私政策（欧盟《通用数据保护条例》GDPR）</h2>
+      <p>
+        <strong>数据控制者：</strong> Steven Ernst Kleynenberg / Kleynenberg Publishers，位于荷兰代尔夫特 (Delft, The Netherlands) · 联系邮箱：<a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> · 适用域名：<a href="https://tkp.kleynenberg.com">https://tkp.kleynenberg.com</a>。
+      </p>
+      <ul>
+        <li><strong>零追踪与零数据出售：</strong> 本网站为静态发布与开源工具门户，不出售任何个人数据，不使用广告或行为分析追踪器，也不建立访客画像。</li>
+        <li><strong>技术性传输处理：</strong> 网站通过 GitHub Pages（<a href="https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection">https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages#data-collection</a>）托管，并通过 Google Fonts（<a href="https://developers.google.com/fonts/faq/privacy">https://developers.google.com/fonts/faq/privacy</a>）加载无障碍字体 <em>Atkinson Hyperlegible</em> 与 <em>Noto Sans SC</em>；相关 IP 地址仅用于安全传输与无障碍显示（依据欧盟 GDPR 第 6(1)(f) 条合法利益：<a href="https://eur-lex.europa.eu/eli/reg/2016/679/oj">https://eur-lex.europa.eu/eli/reg/2016/679/oj</a>）。</li>
+        <li><strong>您的法定权利：</strong> 根据 GDPR 第 15–21 条，您可通过 <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a> 行使查阅、更正、删除或反对权，亦可向荷兰数据保护局 Autoriteit Persoonsgegevens（<a href="https://www.autoriteitpersoonsgegevens.nl">https://www.autoriteitpersoonsgegevens.nl</a>）或欧洲数据保护委员会 EDPB（<a href="https://www.edpb.europa.eu/">https://www.edpb.europa.eu/</a>）投诉。</li>
+      </ul>
+    </article>
+
+    <article class="card" id="braille">
+      <h2>Unicode Braille (U+2800–U+28FF · Visual Braille Summary)</h2>
+      <p class="subtitle">
+        Visual Literary Braille representation for sighted readers. Screen readers automatically render the semantic HTML sections above directly to refreshable Braille displays.
+      </p>
+      <div class="braille-box" aria-hidden="true">⠠⠏⠠⠗⠠⠊⠠⠧⠠⠁⠠⠉⠠⠽⠀⠠⠏⠠⠕⠠⠇⠠⠊⠠⠉⠠⠽⠀⠠⠛⠠⠙⠠⠏⠠⠗⠀⠤⠀⠞⠅⠏⠲⠅⠇⠑⠽⠝⠑⠝⠃⠑⠗⠛⠲⠉⠕⠍
+⠠⠉⠕⠝⠞⠗⠕⠇⠇⠑⠗⠒⠀⠠⠎⠞⠑⠧⠑⠝⠀⠠⠑⠗⠝⠎⠞⠀⠠⠅⠇⠑⠽⠝⠑⠝⠃⠑⠗⠛⠀⠌⠀⠠⠅⠇⠑⠽⠝⠑⠝⠃⠑⠗⠛⠀⠠⠏⠥⠃⠇⠊⠎⠓⠑⠗⠎⠂⠀⠠⠙⠑⠇⠋⠞⠂⠀⠠⠞⠓⠑⠀⠠⠝⠑⠞⠓⠑⠗⠇⠁⠝⠙⠎⠲
+⠠⠉⠕⠝⠞⠁⠉⠞⠒⠀⠎⠞⠑⠧⠑⠝⠈⠁⠅⠇⠑⠽⠝⠑⠝⠃⠑⠗⠛⠲⠉⠕⠍
+⠠⠵⠑⠗⠕⠀⠞⠗⠁⠉⠅⠊⠝⠛⠀⠉⠕⠕⠅⠊⠑⠎⠂⠀⠵⠑⠗⠕⠀⠏⠗⠕⠋⠊⠇⠊⠝⠛⠂⠀⠵⠑⠗⠕⠀⠎⠁⠇⠑⠀⠕⠋⠀⠏⠑⠗⠎⠕⠝⠁⠇⠀⠙⠁⠞⠁⠲⠀⠠⠎⠞⠁⠞⠊⠉⠀⠓⠕⠎⠞⠊⠝⠛⠀⠕⠝⠀⠠⠛⠊⠞⠠⠓⠥⠃⠀⠠⠏⠁⠛⠑⠎⠆⠀⠇⠕⠉⠁⠇⠤⠋⠊⠗⠎⠞⠀⠃⠗⠕⠺⠎⠑⠗⠀⠏⠗⠕⠉⠑⠎⠎⠊⠝⠛⠲</div>
     </article>
   </main>
 
   <footer>
     <div>
-      <strong>Kleynenberg Publishers</strong> · Waterloop #1, 2514 XC Delft, The Netherlands
+      <strong>Kleynenberg Publishers</strong> · Delft, The Netherlands · <a href="mailto:steven@kleynenberg.com">steven@kleynenberg.com</a>
     </div>
     <div>
-      <a href="./privacy.html">Privacy Policy (GDPR / AVG)</a>
-      <a href="./cookies.html">Cookie Policy (ePrivacy)</a>
-      <a href="./voorwaarden.html">Terms &amp; Conditions (Algemene voorwaarden)</a>
+      <a href="./privacy.html">Privacy</a>
+      <a href="./cookies.html">Cookies</a>
+      <a href="./terms.html">Terms</a>
+      <a href="https://tkp.kleynenberg.com/llms.txt">llms.txt</a>
     </div>
   </footer>
 </body>
