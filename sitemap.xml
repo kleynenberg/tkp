@@ -1,10 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!-- ============================================================================ -->
-<!-- INTEGRITY HEADER                                                             -->
-<!-- File:        tkp/sitemap.xml                                                  -->
-<!-- Host:        https://tkp.kleynenberg.com/                                                  -->
-<!-- Protocol:    Sitemaps.org 0.9 (https://www.sitemaps.org/protocol.html)       -->
-<!-- ============================================================================ -->
+<?xml version='1.0' encoding='utf-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://tkp.kleynenberg.com/</loc>
@@ -17,5 +11,23 @@
   <url>
     <loc>https://tkp.kleynenberg.com/llms-full.txt</loc>
     <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://tkp.kleynenberg.com/privacy.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tkp.kleynenberg.com/cookies.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://tkp.kleynenberg.com/terms.html</loc>
+    <lastmod>2026-11-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
   </url>
 </urlset>
